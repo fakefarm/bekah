@@ -61,25 +61,34 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #F06060;
+  background: #F06060;
+  background: url('../images/beeks2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
+	background: #FF6666;
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+	background: #00E9E9;
 }
 
 .bl-main > section:nth-child(4) {
-	top: 50%;
-	left: 50%;
-	background: #10A296;
+  top: 50%;
+  left: 50%;
+  background: url('../images/011.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bl-box {
@@ -114,10 +123,11 @@ a:hover {
 
 .bl-box h2 {
 	text-align: center;
-	margin: 0;
-	padding: 20px;
-	width: 100%;
-	font-size: 1.8em;
+  font-family: 'Lato';
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  font-size: 3em;
 	letter-spacing: 2px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -137,7 +147,8 @@ a:hover {
 
 .bl-icon:before {
 	display: block;
-	font-size: 2em;
+	font-size: 0.75em;
+  font-family: 'icomoon';
 	margin-bottom: 10px;
 }
 
@@ -158,6 +169,7 @@ a:hover {
 }
 
 .bl-main > section .bl-icon-close {
+  font-size: 3em;
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -171,7 +183,7 @@ a:hover {
 	content: "\e005";
 }
 
-.bl-content, 
+.bl-content,
 div.bl-panel-items > div > div {
 	opacity: 0;
 	pointer-events: none;
@@ -188,16 +200,36 @@ div.bl-panel-items > div > div {
 /* Custom content */
 
 .bl-content p {
-	margin: 0 auto;
-	padding-bottom: 15px;
-	font-size: 1.7em;
-	line-height: 1.8;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  font-size: 2.3em;
+  line-height: 1.8;
 }
+
+
+.bl-content.rates p {
+	font-size: 1.5em;
+}
+
+.bl-content.rates h3 {
+  font-size: 1.75em;
+}
+
+.bl-content.rates article {
+  padding: 0px 40px 0px 0px;
+}
+
 
 .bl-content h2 {
 	font-size: 3em;
 	font-weight: 300;
 	margin: 0 0 20px 0;
+}
+
+.bl-content h3 {
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0 0 20px 0;
 }
 
 .bl-content article {
@@ -221,18 +253,16 @@ div.bl-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-} 
+}
 
 .bl-content > ul li {
 	display: inline-block;
-	width: 20%;
-	margin: 1%;
+	width: 49%;
 }
 
 .bl-content > ul li a {
 	display: block;
 	padding: 0;
-	border: 8px solid rgba(0,0,0,0.1);
 }
 
 .bl-content > ul li a img {
@@ -252,12 +282,16 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	opacity: 1;
 	bottom: 90px;
 	top: 90px;
 	pointer-events: auto;
+}
+
+div.bl-panel-items > div > div img {
+  width: 40%;
 }
 
 div.bl-panel-items > div > div h3 {
@@ -372,7 +406,7 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > section:first-child.bl-expand {
-	background: #EE4444;
+	background: #333333;
 }
 .bl-main > section:nth-child(2).bl-expand {
 	background: #F98262;
@@ -446,6 +480,19 @@ section.bl-expand .bl-icon-close {
 	}
 
 	.bl-content > ul li {
-		width: 40%;
+		width: 100%;
 	}
 }
+
+@media screen and (min-width: 46.5em) {
+  .steps {
+    width: 49%;
+    float: left;
+  }
+  .contact {
+    width: 49%;
+    float: right;
+  }
+}
+
+
