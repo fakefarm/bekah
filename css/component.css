@@ -78,13 +78,13 @@ a:hover {
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #00E9E9;
+	background: #453b31;
 }
 
 .bl-main > section:nth-child(4) {
   top: 50%;
   left: 50%;
-  background: url('../images/011.jpg') no-repeat center center;
+  background: url('../images/start.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -127,10 +127,11 @@ a:hover {
   margin: 0;
   padding: 20px;
   width: 100%;
-  font-size: 3em;
+  font-size: 4em;
 	letter-spacing: 2px;
-	font-weight: 700;
+	font-weight: 300;
 	text-transform: uppercase;
+
 }
 
 .bl-icon {
@@ -224,6 +225,7 @@ div.bl-panel-items > div > div {
 	font-size: 3em;
 	font-weight: 300;
 	margin: 0 0 20px 0;
+  text-transform: uppercase;
 }
 
 .bl-content h3 {
@@ -316,7 +318,7 @@ div.bl-panel-items {
 }
 
 div.bl-panel-items > div {
-	background: #3ba5db;
+	background: #453b31;
 	z-index: 0;
 	opacity: 0;
 	-webkit-transform: translateY(0);
@@ -494,5 +496,4 @@ section.bl-expand .bl-icon-close {
     float: right;
   }
 }
-
 
